@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: white;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 20px;
+    text-align: center;
+    background: #FBBD1E;
+}
+
+.header h1 {
+	color:blue;
+	font-family: "Times New Roman",serif;
+	font-style: bold;
+	font-size: 50px;
+	font-weight: 900;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #DB3811;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: blue;
+    color: black;
+}
+
+.leftcolumn {
+    float: left;
+    width: 100%;
+    background-color: gray;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: orange;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #DB3811;
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn{   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>SHARNBASVA UNIVERSITY</h1>
+</div>
+
+<div class="topnav">
+  <a href="home.html">Home</a> 
+  <a href="home.html">About us</a> 
+  <a href="admission.html">Admission</a> 
+  <a href="administration.html">Administration</a> 
+  <li class="academic">
+  <a href="javascript:void(0)" class="dropbtn">Academic</a>
+  <div class="academic-content">
+  <a href="#">under graduate program</a>
+  <a href="#">post graduate program</a>
+  </div>
+  </li>
+  <a href="infrastracture.html">Infrastracture</a>
+  <a href="contact us.html"></a>
+</div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+	<p>Objectives<p>
+	<p>Authorities of University<p>
+	<p>About University<p>
+	   </div>
+  </div>
+</div> 
+ 
+<div class="footer">
+  <h2>Copyright © 2017 Sharnbasva University,Kalaburagi
+Designed & Developed by Department of Computer Science & Engineering</h2>
+</div>
+
+</body>
+</html>
