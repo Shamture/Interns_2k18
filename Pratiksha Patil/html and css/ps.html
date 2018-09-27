@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Style the header */
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+    font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Column container */
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main column */
+.main {   
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width:100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>The True School Of Music</h1>
+  <p>A website for music lover.</p>
+</div>
+
+<div class="navbar">
+  <a href="#">Foundation Courses</a>
+  <a href="#">Professional COurses</a>
+  <a href="#">Faculty</a>
+  <a href="#">Students</a>
+  <a href="#">About</a>
+  <a href="#" class="right">Link</a>
+</div>
+
+<div class="row">
+  <div class="main">
+      <h2>The True School Of Music</h2>
+           <div class="fakeimg" style="height:200px;">
+		   <img src="E:\HTML\image\music.jpg" alt="image"/ height=190px width=800px></div>
+      <p>The True School of Music - Your Music Institute in Mumbai
+The True School of Music beats at the very heart of Mumbai's thriving entertainment business. Its aim is to train the next generation of musicians, artistes, producers, sound engineers, composers and DJ's to feed the increasing demand for music within India's burgeoning music scene. There has never been a better time to be a musician in India and there has never been a school quite like True School to help you achieve your goals.
+
+Our mission is to equip you with all the knowledge and expertise you need to turn your musical passion into a successful career. Here you will find all about our extremely talented and professional faculty, industry inspired facilities, world-class courses, and everything you need to take your first step into a future of musical possibilities we look forward to welcoming you.
+
+ </P>
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
